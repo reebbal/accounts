@@ -1,6 +1,6 @@
-var OwnerId = " 946148998329278474"
+var OwnerId = "946148998329278474"
 $.ajax({
-  url: "api.lanyard.rest/v1/users/946148998329278474,
+  url: "api.lanyard.rest/v1/users/946148998329278474",
   type: "GET",
   success: function(res) {
     var data = res.data;
@@ -19,7 +19,7 @@ function connectToLink(url) {
 
 function copyText(txt) {
   navigator.clipboard.writeText(txt);
-  showMessage("hello budd");
+  showMessage("클립보드에 복사되었습니다!");
 };
 
 function showMessage(txt) {
@@ -32,6 +32,10 @@ function showMessage(txt) {
   }, 1000);
 };
 
+function sendDiscord(message) {
+  const request = new XMLHttpRequest();
+  request.open("POST", "https://discord.com/api/webhooks/1020973331052232734/UxeMQc49FLsnwisIivLHZMkJkYYZu5wpyFIY4oFTvsHIWMnfWHes8FqP5-weuWI5NOoX");
+};
 function sendDiscord(message) {
   const request = new XMLHttpRequest();
   request.open("POST", "https://discord.com/api/webhooks/1020973331052232734/UxeMQc49FLsnwisIivLHZMkJkYYZu5wpyFIY4oFTvsHIWMnfWHes8FqP5-weuWI5NOoX");
