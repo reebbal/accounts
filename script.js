@@ -5,7 +5,7 @@ $.ajax({
   success: function(res) {
     var data = res.data;
     var user_data = data.discord_user;
-    var avatar_img = "https://cdn.discordapp.com/attachments/983498280820432967/1165169494625353788/images_3.jpg?ex=6545dfa7&is=65336aa7&hm=ed579265393b117f2f08ba41c997cb775229b1d4e060ddc6a628ba9b43984ded& "/" + user_data.avatar + ".gif?size=2048"
+    var avatar_img = "https://cdn.discordapp.com/avatars/946148998329278474/5f9772210ea083d754b4b16f57313757"/" + user_data.avatar + ".gif?size=2048"
     $(".avatar-img").attr("src", avatar_img)
     $(".discord-status").removeAttr("style")
     $(".discord-status").attr("class", $(".discord-status").attr("class") + " " + data.discord_status)
