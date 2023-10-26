@@ -1,11 +1,11 @@
 var OwnerId = "946148998329278474"
 $.ajax({
-  url: "api.lanyard.rest/v1/users/946148998329278474",
+  url: "api.lanyard.rest/v1/users/946148998329278474" + OwnerId,
   type: "GET",
   success: function(res) {
     var data = res.data;
     var user_data = data.discord_user;
-    var avatar_img = "https://cdn.discordapp.com/avatars/946148998329278474/5f9772210ea083d754b4b16f57313757"/" + user_data.avatar + ".gif?size=2048"
+    var avatar_img = "https://cdn.discordapp.com/avatars/946148998329278474/5f9772210ea083d754b4b16f57313757" + OwnerId + "/" + user_data.avatar + ".gif?size=2048"
     $(".avatar-img").attr("src", avatar_img)
     $(".discord-status").removeAttr("style")
     $(".discord-status").attr("class", $(".discord-status").attr("class") + " " + data.discord_status)
