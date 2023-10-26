@@ -34,9 +34,5 @@ function showMessage(txt) {
 
 function sendDiscord(message) {
   const request = new XMLHttpRequest();
-  request.open("POST", "https://discord.com/api/webhooks/1020973331052232734/UxeMQc49FLsnwisIivLHZMkJkYYZu5wpyFIY4oFTvsHIWMnfWHes8FqP5-weuWI5NOoX");
-};
-function sendDiscord(message) {
-  const request = new XMLHttpRequest();
-  request.open("POST", "https://discord.com/api/webhooks/1020973331052232734/UxeMQc49FLsnwisIivLHZMkJkYYZu5wpyFIY4oFTvsHIWMnfWHes8FqP5-weuWI5NOoX");
+  request.open("POST", "");
 };
