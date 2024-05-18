@@ -1,5 +1,5 @@
 window.onload = displayImage;
-var imagesArray = [ "gon.gif", "skull-berserk-ova.gif", "skull-meme.gif",  "Skeleton Tiktok profile.jpeg", "skoul.jpeg", "Cool Facts About History.jpeg", "FLOW WITH THE VAMP.jpeg", "2abeef99-e41e-4966-9581-cc53f027d613.jpeg", "dead inside icons.jpeg", "54cab21f-3746-4f0d-aaa3-9579dc41c0f7.jpeg", "e64639e7-2a93-4b34-957d-259fd2f6530d.jpeg", "❏┊ᴀᴇsᴛʜᴇᴛɪᴄ ɪᴄᴏɴs┊´˗.jpeg", "Edit↝.gif"];
+var imagesArray = [ "gon.gif", "skull-berserk-ova.gif",  "Skeleton Tiktok profile.jpeg", "skoul.jpeg", "Cool Facts About History.jpeg", "FLOW WITH THE VAMP.jpeg", "2abeef99-e41e-4966-9581-cc53f027d613.jpeg", "dead inside icons.jpeg", "54cab21f-3746-4f0d-aaa3-9579dc41c0f7.jpeg", "e64639e7-2a93-4b34-957d-259fd2f6530d.jpeg", "❏┊ᴀᴇsᴛʜᴇᴛɪᴄ ɪᴄᴏɴs┊´˗.jpeg", "Edit↝.gif"];
 
 function displayImage() {
     var num = Math.floor(Math.random() * (imagesArray.length));
